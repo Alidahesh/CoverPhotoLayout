@@ -20,6 +20,7 @@ UICollectionViewFlowLayout *flowLayout;
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    CGFloat Width = [UIScreen mainScreen].bounds.size.width;
     
     self.sectionInset = UIEdgeInsetsMake(fabsl((height-up - 50)/2), 0, fabsl((height-up)/2), 0);
 
@@ -34,9 +35,20 @@ UICollectionViewFlowLayout *flowLayout;
     return CGSizeMake(1000, height2);
 }
 
-
-//
-//UICollectionViewFlowLayout *aFlowLayout = [UICollectionViewFlowLayout new];
-//[aFlowLayout setSectionInset:UIEdgeInsetsMake(100, 100, 50, 50)];
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+    
+    NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
+    
+    NSLog(@"%f",rect.size.width);
+    CGRect visibleRegion;
+    
+    
+    visibleRegion.origin = self.collectionView.contentOffset;
+    visibleRegion.size = self.collectionView.bounds.size;
+    
+    return attributes;
+    
+    
+}
 
 @end
