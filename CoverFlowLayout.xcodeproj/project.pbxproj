@@ -15,6 +15,8 @@
 		411D85191DDE3A320032A08A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411D85171DDE3A320032A08A /* LaunchScreen.storyboard */; };
 		411D85241DDE3A320032A08A /* CoverFlowLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 411D85231DDE3A320032A08A /* CoverFlowLayoutTests.m */; };
 		411D852F1DDE3A320032A08A /* CoverFlowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 411D852E1DDE3A320032A08A /* CoverFlowLayoutUITests.m */; };
+		411D853E1DDE3CD00032A08A /* CustomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411D853D1DDE3CD00032A08A /* CustomCollectionViewController.m */; };
+		411D85411DDE41290032A08A /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 411D85401DDE41290032A08A /* CoverFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		411D852A1DDE3A320032A08A /* CoverFlowLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoverFlowLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		411D852E1DDE3A320032A08A /* CoverFlowLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayoutUITests.m; sourceTree = "<group>"; };
 		411D85301DDE3A320032A08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411D853C1DDE3CD00032A08A /* CustomCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewController.h; sourceTree = "<group>"; };
+		411D853D1DDE3CD00032A08A /* CustomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewController.m; sourceTree = "<group>"; };
+		411D853F1DDE41290032A08A /* CoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayout.h; sourceTree = "<group>"; };
+		411D85401DDE41290032A08A /* CoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,12 @@
 		411D84FD1DDE3A310032A08A = {
 			isa = PBXGroup;
 			children = (
+				411D85451DDE5D1F0032A08A /* Controller */,
+				411D85441DDE5D160032A08A /* UI */,
+				411D85431DDE5D010032A08A /* View */,
+				411D85421DDE5CF90032A08A /* Model */,
+				411D853F1DDE41290032A08A /* CoverFlowLayout.h */,
+				411D85401DDE41290032A08A /* CoverFlowLayout.m */,
 				411D85081DDE3A320032A08A /* CoverFlowLayout */,
 				411D85221DDE3A320032A08A /* CoverFlowLayoutTests */,
 				411D852D1DDE3A320032A08A /* CoverFlowLayoutUITests */,
@@ -106,6 +118,8 @@
 				411D850F1DDE3A320032A08A /* ViewController.h */,
 				411D85101DDE3A320032A08A /* ViewController.m */,
 				411D85121DDE3A320032A08A /* Main.storyboard */,
+				411D853C1DDE3CD00032A08A /* CustomCollectionViewController.h */,
+				411D853D1DDE3CD00032A08A /* CustomCollectionViewController.m */,
 				411D85151DDE3A320032A08A /* Assets.xcassets */,
 				411D85171DDE3A320032A08A /* LaunchScreen.storyboard */,
 				411D851A1DDE3A320032A08A /* Info.plist */,
@@ -138,6 +152,34 @@
 				411D85301DDE3A320032A08A /* Info.plist */,
 			);
 			path = CoverFlowLayoutUITests;
+			sourceTree = "<group>";
+		};
+		411D85421DDE5CF90032A08A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		411D85431DDE5D010032A08A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		411D85441DDE5D160032A08A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		411D85451DDE5D1F0032A08A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				411D85111DDE3A320032A08A /* ViewController.m in Sources */,
+				411D85411DDE41290032A08A /* CoverFlowLayout.m in Sources */,
 				411D850E1DDE3A320032A08A /* AppDelegate.m in Sources */,
+				411D853E1DDE3CD00032A08A /* CustomCollectionViewController.m in Sources */,
 				411D850B1DDE3A320032A08A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
